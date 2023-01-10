@@ -1,9 +1,4 @@
 
-
-const villagerSpecies = document.querySelector('#species')
-const villagerCatchphrase = document.querySelector('#catchphrase')
-const villagerBirthday = document.querySelector('#birthday')
-
 document.querySelector('button').addEventListener('click', getVillager)
 
 fetch("http://acnhapi.com/v1/villagers/")
