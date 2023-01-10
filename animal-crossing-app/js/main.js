@@ -1,18 +1,8 @@
 
 document.querySelector('button').addEventListener('click', getVillager)
 
-fetch("http://acnhapi.com/v1/villagers/")
-  .then(res => res.json()) // parse response as JSON
-  .then(data => {
-    console.log(data)
-  })
-  .catch(err => {
-    console.log(`error ${err}`)
-  });
-
 function getVillager(){
   const url = `http://acnhapi.com/v1/villagers/${pickRandomVillagerId()}`
-
 
   fetch(url)
       .then(res => res.json()) 
